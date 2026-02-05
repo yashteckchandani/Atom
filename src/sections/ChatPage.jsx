@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import AllProjects from "../components/AllProjects";
+import Chat from "../components/Chat";
 
 const ChatPage = () => {
   return (
@@ -15,9 +16,9 @@ const ChatPage = () => {
       </aside>
 
       {/* Main Chat Area */}
-      <main className="flex-1 flex flex-col items-center justify-between p-8">
-        {/* <Chat /> */}
-      </main>
+      <main className="flex-1 flex flex-col p-8 overflow-hidden">
+        <Chat />
+      </main> 
 
     </div>
     </section>
