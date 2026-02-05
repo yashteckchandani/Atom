@@ -30,7 +30,7 @@ const Hero = () => {
                 <a onClick={(e) => {
                     e.preventDefault();
                     window.scrollBy({
-                    top: window.innerHeight,
+                    top: window.innerHeight+160,
                     behavior: "smooth",
                     });
                 }}
