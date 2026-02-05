@@ -1,16 +1,26 @@
-import React from 'react';
-import ChatItem from './ChatItem';
-import { useEffect,useRef } from 'react';
+import React, { useEffect, useRef } from "react";
+import ChatItem from "./ChatItem";
 
 const ChatList = ({ messages }) => {
-    const msgEnd = useRef(null);
-    useEffect(() => {
-      msgEnd.current.scrollIntoView();
-    }, [messages]);
+  const msgEnd = useRef(null);
+
+  useEffect(() => {
+    msgEnd.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages]);
+
   return (
-    <div className="chats">
+    <div className="flex flex-col gap-4 w-full">
       {messages.map((message, index) => (
-        <ChatItem key={index} message={message} />
+        <div
+          key={index}
+          className={`flex w-full ${
+            message.isBot ? "justify-start" : "justify-end"
+          }`}
+        >
+          <div className="max-w-[75%]">
+            <ChatItem message={message} />
+          </div>
+        </div>
       ))}
       <div ref={msgEnd} />
     </div>
