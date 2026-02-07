@@ -18,11 +18,11 @@ const ChatItem = ({ message }) => {
       /> */}
 
       {isBot ? (
-        <pre className="text-sm leading-relaxed whitespace-pre-wrap break-words overflow-x-auto">
+        <pre className="text-sm font-sans leading-relaxed whitespace-pre-wrap break-words overflow-x-auto">
           {message.text}
         </pre>
       ) : (
-        <p className="text-sm leading-relaxed break-words">
+        <p className="text-sm font-sans leading-relaxed break-words">
           {message.text}
         </p>
       )}

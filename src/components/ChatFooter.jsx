@@ -11,7 +11,7 @@ const ChatFooter = ({ input, setInput, handleEnter, handleSend }) => {
           value={input}
           onKeyDown={handleEnter}
           onChange={(e) => setInput(e.target.value)}
-          className="flex-1 bg-transparent text-white placeholder-gray-400 outline-none text-sm"
+          className="flex-1 bg-transparent font-sans text-white placeholder-gray-400 outline-none text-sm"
         />
 
         <button
