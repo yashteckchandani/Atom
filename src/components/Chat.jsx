@@ -13,7 +13,6 @@ const Chat = ({ selectedProject }) => {
     msgEnd.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
-  // 🔥 React to project selection
   useEffect(() => {
     if (!selectedProject) return;
 
