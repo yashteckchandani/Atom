@@ -4,10 +4,6 @@ const Projects = ({ schema, isSelected, onSelect }) => {
 
   const handleChat = () => {
     onSelect(); // mark this project as selected
-
-    axios.post("http://localhost:8080/api/chat/start", {
-      prompt: schema.description,
-    });
   };
 
   return (
