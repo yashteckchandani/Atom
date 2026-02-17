@@ -1,4 +1,5 @@
-
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 const ChatItem = ({ message }) => {
   const isBot = message.isBot;
@@ -11,16 +12,12 @@ const ChatItem = ({ message }) => {
           : "bg-white text-black ml-auto border"
       }`}
     >
-      {/* <img
-        src={isBot ? logo : userIcon}
-        alt=""
-        className="w-10 h-10 object-cover rounded-md"
-      /> */}
-
       {isBot ? (
-        <pre className="text-sm font-sans leading-relaxed whitespace-pre-wrap break-words overflow-x-auto">
-          {message.text}
-        </pre>
+        <div className="prose prose-invert font-sans max-w-none text-sm leading-relaxed">
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>
+            {message.text}
+          </ReactMarkdown>
+        </div>
       ) : (
         <p className="text-sm font-sans leading-relaxed break-words">
           {message.text}

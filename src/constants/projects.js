@@ -1,14 +1,14 @@
 const projects = {
-  "Aviva Advised": "This conversation will be around Aviva Advised.",
-  "Aviva MM": "This conversation will be around Aviva MM.",
-  "BMO": "This conversation will be around BMO.",
-  "CFS": "This conversation will be around CFS.",
-  "James Hay": "This conversation will be around James Hay.",
-  "AE": "This conversation will be around AE.",
-  "Quilter": "This conversation will be around Quilter.",
-  "Abrd": "This conversation will be around Abrd.",
-  "Lloyds": "This conversation will be around Lloyds.",
-  "Virgin Money": "This conversation will be around Virgin Money."
+  "Aviva Advised": "AVIVA",
+  "Aviva MM": "AVIVA",
+  "BMO": "BMO",
+  "CFS": "BMO",
+  "James Hay": "BMO",
+  "AE": "BMO",
+  "Quilter": "BMO",
+  "Aberdeen": "BMO",
+  "Lloyds": "BMO",
+  "Virgin Money": "BMO"
 };
 
 export default projects;

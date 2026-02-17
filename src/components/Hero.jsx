@@ -20,21 +20,27 @@ const Hero = () => {
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl
           font-semibold tracking-wider my-8"
         >
-          FNZ Atom
+          <span className="bg-gradient-to-r from-pink-400 to-pink-600 bg-clip-text text-transparent font-semibold">
+  FNZ Atom
+</span>
+
           <br />
           A One stop Solution for
           <br />
           All your needs
         </h1>
 
-        <p
-          className="text-base sm:text-lg tracking-wider text-gray-400 max-w-[25rem]
-          lg:max-w-[30rem]"
-        >
-          An all-in-one utility for all
-          your work... Your best buddy
-          just a click away.
-        </p>
+  <p
+  className="text-base sm:text-lg tracking-wider text-gray-400 max-w-[25rem]
+  lg:max-w-[30rem]"
+>
+  An <span className="bg-gradient-to-r from-pink-400 to-pink-600 bg-clip-text text-transparent">
+  all-in-one
+</span> utility for all
+  your work... Your best buddy
+  just a click away.
+</p>
+
 
         <div className="mt-12">
           <button
@@ -43,7 +49,7 @@ const Hero = () => {
             py-2 sm:py-3 px-8 sm:px-10 rounded-full
             sm:text-lg text-sm font-semibold
             tracking-wider transition-all duration-300
-            hover:bg-[#1a1a1a] bg-gray-300 text-black
+            hover:bg-[#CC2B9F] bg-gray-300 text-black
             hover:text-white"
           >
             Start Chatting
